@@ -23,3 +23,14 @@ int Stack::pop() {
         return element;
     }
 }
+
+bool Stack::isEmpty() {
+    if (top == -1) {
+        return true;
+    }
+    return false;
+}
+
+int Stack::topElement() {
+    return elements[top];
+}

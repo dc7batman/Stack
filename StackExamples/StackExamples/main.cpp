@@ -9,13 +9,25 @@
 #include <iostream>
 #include "Stack.hpp"
 
+void reverseStack(Stack& stack);
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
-    Stack *stack = new Stack();
-    stack->push(1);
-    stack->push(2);
-    std::cout << "stack  - " << stack->pop()<< "\n "<< stack->pop() << "\n";
+    Stack stack = Stack();
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
+    stack.push(4);
+    stack.push(5);
     
+    // Reverse stack
+    reverseStack(stack);
+    
+    std::cout << "\n";
     return 0;
+}
+
+void reverseStack(Stack& stack) {
+    
 }

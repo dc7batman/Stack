@@ -15,11 +15,13 @@
 class Stack {
     
     std::vector<int> elements;
+    int top = -1;
     
 public:
-    int top = -1;
     void push(int element);
     int pop();
+    bool isEmpty();
+    int topElement();
 };
 
 #endif /* Stack_hpp */
