@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+#include "Stack.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    Stack *stack = new Stack();
+    stack->push(1);
+    stack->push(2);
+    std::cout << "stack  - " << stack->pop()<< "\n "<< stack->pop() << "\n";
+    
     return 0;
 }
